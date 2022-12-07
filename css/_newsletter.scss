@@ -1,0 +1,140 @@
+@import url("./_variables.scss");
+
+.newsletter{
+    background-color: $very-light-gray;
+    width: 100vw;
+    font-family: "Montserrat", sans-serif;
+    padding: 5% 0;
+    h6{
+        color: $blue;
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 3.4px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p{
+        margin: 0 5%;
+        text-align: center;
+        font-size: 14px;
+        &:last-of-type{
+            font-weight: 600;
+        }
+    }
+    .validation{
+        margin: 3% auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__input{
+            &--Error{
+                border-color: $red!important;
+            }
+        }
+        input{
+            border: $blue 1px solid;
+            font-family: "Montserrat", sans-serif;
+            color: $black;
+            padding: 2%;
+            margin: 2% 0;
+            &:focus{
+                outline: none;
+            }
+            &:last-of-type{
+                border: none;
+                background-color: $black;
+                color: $white;
+                font-weight: 600;
+            }
+        }
+    }
+}
+@media (max-width:321px) {
+    .newsletter{
+        h6{
+            font-size: 2em;
+            letter-spacing: 3.4px;
+        }
+    }
+    
+}
+@media (min-width:$Ipads) {
+    .newsletter{
+        padding: 5% 0;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        h6{
+            font-size: 40px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .validation{
+            margin: 3% auto;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            input{
+                padding: 2%;
+                margin: 2% 0;
+            }
+        }
+    }
+    
+}
+@media (min-width:1000px) {
+    .newsletter{
+        width: 95vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        margin: 0 auto;
+        div{
+            width: 40%;
+        }
+        
+        .validation{
+            margin: 3% auto;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            input{
+                padding: 2%;
+                margin: 2% 0;
+            }
+        }
+    }
+    
+}
+@media (min-width:1000px) {
+    .newsletter{
+        padding: 3% 0;
+        align-items: flex-start;
+        h6{
+            font-size: 67px;
+        }
+        .validation{
+            margin: 0;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            input{
+                padding: 2%;
+                margin: 2% 0;
+            }
+        }
+    }
+    
+}
+@media (min-width:$mediumScrean) {
+    .newsletter{
+        h6{
+            font-size: 77px;
+        }
+    }
+}

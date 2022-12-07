@@ -1,0 +1,89 @@
+@import url("./_variables.scss");
+
+
+header{
+    overflow: hidden;
+    margin: 5% 0 10%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .header__Container{
+        position: relative;
+        margin: 5% 0;
+        width: 95%;
+        height: auto;
+        &--background{
+            width: 100%;
+        }
+        &--button{
+            position: absolute;
+            bottom: 12%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0;
+            border: none;
+            transition: 1s;
+            width: 40%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+@media (min-width: $Ipads) {
+    header{
+        margin-bottom: 5%;
+        .header__Container{   
+            &--button{
+                width: 30%;
+            } 
+        }   
+    }
+}
+@media (min-width: $smallScrean) {
+    header{
+        margin: 0 ;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        .header__Container{
+            width: 48%;    
+            &--background{
+                width: 100%;
+            }
+            &--button{
+                bottom: 15%;
+                width: 20%;
+            } 
+        }   
+    }
+}
+@media (min-width: $mediumScrean) {
+    header{
+        margin: 0 ;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        .header__Container{
+            margin: 2%;
+            width: 40%;    
+            &--background{
+                width: 100%;
+            }
+            &--button{
+                bottom: 15%;
+                width: 20%;
+            } 
+        }   
+    }
+}

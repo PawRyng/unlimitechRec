@@ -1,0 +1,149 @@
+@import url("./_variables.scss");
+
+.information{
+    overflow: hidden;
+    background-color: $black;
+    margin-top: 1vh;
+    padding: 5% 0 3%;
+
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: normal normal bold 15px "Montserrat";
+        text-align: center;
+        color: $white;
+        margin: 0 auto 2%;
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &:last-of-type{
+            max-width: 70%;
+        }
+    }
+}
+
+    
+@media (min-width:319px){
+    .information{ 
+        p{
+            &:last-of-type{
+                max-width: 80%;
+            }
+        }
+    }
+}
+@media (min-width:386px){
+    .information{ 
+        p{
+            &:last-of-type{
+                max-width: 65%;
+            }
+        }
+    }
+}
+@media (min-width:398px){
+    .information{ 
+        p{
+            &:last-of-type{
+                max-width: 63%;
+            }
+        }
+    }
+}
+@media (min-width:430px){
+    .information{ 
+        p{
+            &:last-of-type{
+                max-width: 58%;
+            }
+        }
+    }
+}
+@media (min-width:530px){
+    .information{ 
+        p{
+            &:last-of-type{
+                max-width: 48%;
+            }
+        }
+    }
+}
+@media (min-width:660px){
+    .information{ 
+        p{
+            &:last-of-type{
+                max-width: 40%;
+            }
+        }
+    }
+}
+
+
+//keyframes
+@keyframes scrollingText {
+    from{
+        left: 101vw;
+    }
+    to{
+        left:-1200px;
+    }
+}
+@media (min-width:760px){
+    .information{
+        background-color: $black;
+        margin-top: 0;
+        padding: 2% 0;
+        display: flex;
+        position: relative;
+        p{
+            white-space: nowrap;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            text-align: center;
+            margin: 0;
+            font-size: 18px;
+            animation: scrollingText 20s infinite linear;
+            span{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &:last-of-type{
+                margin-left: 10px;
+                max-width: none;
+            }
+        }
+    }
+}
+@keyframes scrollingText2 {
+    from{
+        left: 101vw;
+    }
+    to{
+        left:-1300px;
+    }
+}
+@media (min-width:$smallScrean){
+    .information{
+        padding: 1% 0;
+        p{
+            font-size: 20px;
+            animation: scrollingText2 15s infinite linear;
+        }
+    }
+}
+@media (min-width:$largeScrean){
+    .information{
+        padding: .5% 0;
+        justify-content: center;
+        p{
+            animation: none;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import "clock";
+@import "Logo";
+@import "Nav";
+@import "info";
+@import "header";
+@import "clients";
+@import "sectionBaner3";
+@import "offerts";
+@import "newsletter";
+
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    $slick-next-character: " ";
+}

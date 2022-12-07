@@ -1,0 +1,156 @@
+@import "_variables.scss";
+
+
+section{
+    width: 100vw;
+    max-width: 100vw;
+    h3{
+        width: 40%;
+        margin: 0 5% 5%;
+        font: normal normal bold 20px "Montserrat";
+    }
+
+    .slick{
+        &-slide{
+            display: flex!important;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            img{
+                cursor: pointer;
+                width: 50%;
+                opacity: .7;
+                transition: .5s;
+                &:hover{
+                    opacity: 1;
+                }
+
+            }
+        }
+        &-prev{
+            left: 5%;
+            display: flex;
+            justify-content: center;
+            width: auto;
+            height: auto;
+            align-items: center;
+            z-index: 1;
+            transform: scaleX(-1) translateY(-20px);
+            &::before{
+                content: " ";
+            }
+        }
+
+        &-next{
+            display: flex;
+            justify-content: center;
+            width: auto;
+            height: auto;
+            align-items: center;
+            right: 5%;
+
+            &::before{
+                content: " ";
+            }
+        }
+    }
+}
+
+
+@media (min-width:$Ipads) {
+    section{
+        width: 100vw;
+        max-width: 100vw;
+        h3{
+            width: auto;
+            margin: 0 5% 3%;
+            font-size: 25px;
+        }
+        .slider1{
+            &-slide{
+                width: 100%;
+                img{
+                    width: 30%;
+                }
+            }
+            &-prev{
+                left: 8%;
+                width: 5%;
+                img{
+                    width: 100%;
+                }
+            }
+    
+            &-next{
+                right: 8%;
+                width: 5%;
+                img{
+                    width: 100%;
+                }
+                &::before{
+                    content: " ";
+                }
+            }
+        }
+    }
+
+}
+@media (min-width:$smallScrean) {
+    section{
+        .slider1{
+            padding: 0 10%;
+            .slick{
+                &-slide{
+                    margin: 10px;
+                    width: 100%;
+                    img{
+                        width: 40%;
+                    }
+                }
+                &-prev{
+                    left: 4%;
+                    width: 3%;
+                    img{
+                        width: 100%;
+                    }
+                }
+        
+                &-next{
+                    right: 4%;
+                    width: 3%;
+                    img{
+                        width: 100%;
+                    }
+                    &::before{
+                        content: " ";
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+@media (min-width:$mediumScrean) {
+    section{
+        .slider1{
+            .slick{
+                &-slide{
+                    img{
+                        width: 60%;
+                    }
+                }
+                &-prev{
+                    width: 2%;
+                }
+        
+                &-next{
+                    width: 2%;
+                }
+            }
+
+        }
+    }
+
+}
+

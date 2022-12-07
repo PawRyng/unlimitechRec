@@ -1,0 +1,25 @@
+.logoContainer{
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img{
+        max-width: 80%;
+    }
+}
+@media (min-width:$smallScrean) {
+    .logoContainer{
+        
+        padding: 4% 0 0;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+@media (min-width:$mediumScrean) {
+    .logoContainer{
+        padding: 2% 0 0;
+    }
+}

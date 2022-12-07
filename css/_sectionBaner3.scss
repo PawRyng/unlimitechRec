@@ -1,0 +1,255 @@
+@import url("./_variables.scss");
+.baner3{
+    overflow: hidden;
+    margin: 10% 0;
+    width: 100vw;
+    height: 40vh;
+    background-image: url("../img/Baner 3-1.png");
+    background-position: 15%;
+    background-size: cover;
+    position: relative;
+    font-family: sans-serif;
+    font: normal normal 15px "Montserrat";
+    .textWrapper{
+        position: absolute;
+        top: 5%; //20
+        left: 40%; //45 dla 415px
+        display: flex;
+        max-width: 50%;
+        font-size: 20px;
+        justify-content: space-between;
+        text-transform: uppercase;
+
+        .verticalText{
+            padding: 0 3%;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            font-weight: 500;
+        }
+        .horizontalText{
+            display: flex;
+            flex-wrap: wrap;
+            color: #3C413E;
+            flex-direction: column;
+            span{
+                &:nth-of-type(1){
+                    font-size: 3rem;
+                    font-weight: 700;
+                    color: #91745A;
+                }
+                &:nth-of-type(2){
+                    font-size: 2rem;
+                    font-weight: 500;
+                    letter-spacing: 3.5px;
+                }
+                &:nth-of-type(3){
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    letter-spacing: 20px;
+                    color: #91745A;
+                }
+            }
+        }
+    }
+    button{
+        width: 55%;
+        border: none;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media (max-width:321px) {
+.baner3{
+        .textWrapper{
+            font-size: 14px;
+            top: 15%; 
+            left: 40%; 
+            .horizontalText{
+                span{
+                    &:nth-of-type(1){
+                        font-size: 2.3rem;
+                    }
+                    &:nth-of-type(2){
+                        font-size: 1.4rem;
+                        letter-spacing: 4px;
+                    }
+                    &:nth-of-type(3){
+                        font-size: .7rem;
+                        letter-spacing: 18px;
+                    }
+                }
+            }
+        }
+        button{
+            top: 75%;
+        }
+    }
+    
+}
+
+@media (min-width:$Ipads) {
+.baner3{
+        .textWrapper{
+            top: 15%; 
+            left: 40%; 
+            .verticalText{
+                font-size: 2rem;
+            }
+            .horizontalText{
+                span{
+                    &:nth-of-type(1){
+                        font-size: 5rem;
+                    }
+                    &:nth-of-type(2){
+                        font-size: 3.5rem;
+                        letter-spacing: 6px;
+                    }
+                    &:nth-of-type(3){
+                        margin-left: 6px;
+                        font-size: 2rem;
+                        letter-spacing: 34px;
+                    }
+                }
+            }
+        }
+        button{
+            top: 75%;
+            width: 35%;
+            left: 67%;
+        }
+    }
+}
+@media (min-width:850px) {
+.baner3{
+        .textWrapper{
+            top: 15%; 
+            left: 40%; 
+            .verticalText{
+                font-size: 2.1rem;
+            }
+            .horizontalText{
+                span{
+                    &:nth-of-type(1){
+                        font-size: 5rem;
+                    }
+                    &:nth-of-type(2){
+                        font-size: 3.5rem;
+                        letter-spacing: 6px;
+                    }
+                    &:nth-of-type(3){
+                        margin-left: 6px;
+                        font-size: 2rem;
+                        letter-spacing: 34px;
+                    }
+                }
+            }
+        }
+        button{
+            top: 75%;
+            width: 30%;
+            left: 63%;
+        }
+    }
+}
+@media (min-width:1000px) {
+.baner3{
+        margin: 5% 0;
+        height: 60vh;
+        .textWrapper{
+            top: 15%; 
+            left: 50%; 
+            .verticalText{
+                font-size: 2.1rem;
+            }
+            .horizontalText{
+                span{
+                    &:nth-of-type(1){
+                        font-size: 5rem;
+                    }
+                    &:nth-of-type(2){
+                        font-size: 3.5rem;
+                        letter-spacing: 6px;
+                    }
+                    &:nth-of-type(3){
+                        margin-left: 6px;
+                        font-size: 2rem;
+                        letter-spacing: 34px;
+                    }
+                }
+            }
+        }
+        button{
+            top: 60%;
+            width: 23%;
+            left: 67%;
+        }
+    }
+}
+@media (min-width:1300px) {
+.baner3{
+        button{
+            top: 60%;
+            width: 17%;
+            left: 66%;
+        }
+    }
+}
+@media (min-width:1400px) {
+.baner3{
+        height: 70vh;
+        margin: 3% 0;
+        .textWrapper{
+            top: 25%; 
+            left: 50%; 
+            .verticalText{
+                font-size: 2.8rem;
+            }
+            .horizontalText{
+                span{
+                    &:nth-of-type(1){
+                        font-size: 7rem;
+                    }
+                    &:nth-of-type(2){
+                        font-size: 4.3rem;
+                        letter-spacing: 14px;
+                    }
+                    &:nth-of-type(3){
+                        margin-left: 6px;
+                        font-size: 3rem;
+                        letter-spacing: 47px;
+                    }
+                }
+            }
+        }
+        button{
+            top: 78%;
+            left: 70%;
+        }
+    }
+}
+@media (min-width:1600px) {
+.baner3{
+        
+        button{
+            left: 67%;
+        }
+    }
+}
+@media (min-width:1800px) {
+.baner3{
+        height: 90vh;
+        .textWrapper{
+            top: 30%;
+        }
+        button{
+            left: 64%;
+            width: 12%;
+        }
+    }
+}
